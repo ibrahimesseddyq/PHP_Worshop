@@ -7,8 +7,15 @@
     $monPrenom="Ibrahim";
     $monAge=18;
     echo "Mon prenom $monPrenom , Mon nom $monNom , Mon age $monAge" .'<br>';
-    echo 'Mon prenom '.$monPrenom.', Mon nom '.$monPrenom.',Mon age '.$monAge.'<br>';
-
+    echo 'Mon prenom .$monPrenom., Mon nom .$monPrenom.,Mon age .$monAge.<br>';
+    echo "<br>Using Heredoc :<br>";
+    $text1=<<<TEXT
+    Mon prenom $monPrenom , Mon nom $monNom , Mon age $monAge
+    TEXT;
+    echo "<br>Using Nowdoc :<br>";
+    $text1=<<<'TEXT'
+    Mon prenom $monPrenom , Mon nom $monNom , Mon age $monAge<br>
+    TEXT;
     ## Exercise 4
     $list= array();
     $int=1432;
